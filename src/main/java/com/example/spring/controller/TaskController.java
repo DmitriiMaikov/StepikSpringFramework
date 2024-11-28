@@ -33,9 +33,8 @@ public class TaskController {
     }
 
     @DeleteMapping("/tasks/{id}")
-    public void delete(@PathVariable Long id) {
-        Task task = taskRepository.findById(id).get();
-        taskRepository.delete(task);
+    public void delete(@PathVariable Long id) {;
+        taskRepository.deleteById(id);
     }
 
     @PatchMapping("/tasks/{id}")
