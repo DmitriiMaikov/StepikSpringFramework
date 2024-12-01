@@ -7,6 +7,8 @@ public interface UserService {
 
     User create(User user);
 
+    User getCurrentUser();
+
     Iterable<User> findAll();
 
     User findById(Long id);
